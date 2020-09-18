@@ -1,0 +1,42 @@
+/**
+*L'enum CARD serve a verificare che le caselle non siano contrastanti con le caselle adiacenti.
+*/
+enum CARD {NORD, EST, SUD, OVEST};
+//enum MOUSE{LEFT, RIGHT};
+
+/**
+*Le caselle sono i quadrati formante da quattro numeri(uno per lato) che verranno posizione nelle strutture PiastrBianche.
+*/
+struct Caselle{
+
+	int id;/**< id indentifica ogni casella*/
+	int x;/**< x indica la posizione all'interno della matrice*/
+	int y;/**< y indica la posizione all'interno della matrice*/
+	bool selezione;/**< selezione indica quando una casella viene selezionata quando avviene un click del mouse sopra di essa*/
+	ALLEGRO_BITMAP *image;/**< puntatore che serve a caricare le immagini tramite ALLEGRO*/
+	bool destra;/**< indica se spostiamo una casella è nella piastra di destra o nella piastra di sinistra.*/
+	int card[4]; /**< indica quale parte della casella è occupata da un immagine numero*/
+
+};
+/**
+*Le piastre bianche sono due. In una(quella di destra) vengono collocate le caselle in posizione random, nella seconda(quella di sinistra)
+*andranno collocate le caselle nell'ordine corretto.
+*/
+struct PiastreBianche{
+	
+	int id;//**<indica la posizione all'interno della piastra biancha*/
+	int x;/**< x indica la posizione all'interno della matrice*/
+	int y;/**< x indica la posizione all'interno della matrice*/
+	bool occ;/**< la variabile occ indica se la piastra è occuopata o libera*/
+	int id_casella;//**<indica in quale posizione della piastra viene spostata una casella*/
+	int card[4];	/**< indica quale parte della casella è occupata da un immagine numero*/
+	//solo per pbs
+
+
+};
+
+
+
+
+
+
