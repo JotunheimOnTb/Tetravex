@@ -3,7 +3,7 @@
 */
 /**
 *	@mainpage TETRAVEX
-*	Il programma rappresenta un puzzle numerico di nome Tetravex.
+*	Il programma rappresenta un puzzle game numerico di nome Tetravex.
 *	Lo scopo del gioco è quello di mettere le caselle numerate ai lati del quadrato, in alto in basso destra e sinistra,
 *	in modo tale da non contrastare con le caselle adiacenti.
 *	Per l'utilizzo di immagini e input da mouse abbiamo utilizzato le funzioni di libreria di Allegro 5.
@@ -50,7 +50,6 @@ void game_loop(Caselle **cas, PiastreBianche **pbd, PiastreBianche **pbs)
     bool redraw = true;
     al_start_timer(timer);
 
-
 	if (DIFFICOLTA == 2)
 	{
 		sfondo_partita = al_load_bitmap("../images/s2x2.png");	
@@ -63,8 +62,6 @@ void game_loop(Caselle **cas, PiastreBianche **pbd, PiastreBianche **pbs)
 	{
 		sfondo_partita = al_load_bitmap("../images/s4x4.png");	
 	}
-
-
 
     while (!done) {
         ALLEGRO_EVENT event;
@@ -86,10 +83,6 @@ void game_loop(Caselle **cas, PiastreBianche **pbd, PiastreBianche **pbs)
 				}
 			}
 			redraw = true;
-
-
-
-	  
         }
 		else if(event.type == ALLEGRO_EVENT_MOUSE_BUTTON_DOWN)		//eventi mouse
 		{
@@ -125,15 +118,15 @@ void game_loop(Caselle **cas, PiastreBianche **pbd, PiastreBianche **pbs)
 		//nuovo if
         if (redraw && al_is_event_queue_empty(event_queue)) {	//evento che si alternerà con ALLEGRO EVENT TIME
 			
-								//ricolora il display
+			//ricolora il display
             redraw = false;
             al_clear_to_color(al_map_rgb(0, 0, 0));
 			al_draw_bitmap(sfondo_partita,0,0,0);
             
-		if (maschera & LOG){
-	    	al_draw_textf(font, al_map_rgb(255, 255, 255), WIDTH/2, 20, ALLEGRO_ALIGN_CENTRE,"MOUSE x: %d", pos_x);//stampa testo con variabile
-	   		al_draw_textf(font, al_map_rgb(255, 255, 255), WIDTH/2, 40, ALLEGRO_ALIGN_CENTRE,"MOUSE y: %d", pos_y);//stampa testo con variabile
-}
+			if (maschera & LOG){
+				al_draw_textf(font, al_map_rgb(255, 255, 255), WIDTH/2, 20, ALLEGRO_ALIGN_CENTRE,"MOUSE x: %d", pos_x);//stampa testo con variabile
+				al_draw_textf(font, al_map_rgb(255, 255, 255), WIDTH/2, 40, ALLEGRO_ALIGN_CENTRE,"MOUSE y: %d", pos_y);//stampa testo con variabile
+			}
 			//disegna le piastrelle bianche vuote dx & sx
 			for (int i = 0 ; i < DIFFICOLTA ; i++)
 			{	
@@ -681,7 +674,6 @@ void init(Caselle **cas, PiastreBianche **pbd, PiastreBianche **pbs)
 */
 int main(int argc, char *argv[])/**************MAIN**********************/
 {	
-
 	if (argc > 1 && *argv[1] == '1')
 		maschera = 1;
 	else if (argc > 1 && *argv[1] == '2')
@@ -692,8 +684,8 @@ int main(int argc, char *argv[])/**************MAIN**********************/
 	DBM("Abbiamo selezionato il livello di LOG",LOG);
 	DBM("Abbiamo selezionato il livello di ERROR",ERROR);
 
-	DIFFICOLTA = nuovomenu(); //xk non c'è il menu
-	if (DIFFICOLTA == -1) return 0; //errore
+	DIFFICOLTA = nuovomenu(); //
+	if (DIFFICOLTA == -1) return 0; //error
 
 	/*dichiarazioni caselle*/
 	Caselle **cas = new Caselle*[DIFFICOLTA];
@@ -716,6 +708,4 @@ int main(int argc, char *argv[])/**************MAIN**********************/
 	
 	return 0;
 }
-
-
 

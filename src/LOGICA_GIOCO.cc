@@ -3,7 +3,6 @@
 *	@mainpage TETRAVEX
 * 	
 *	@author Daniele Salerno
-*	@author Salvatore Campanella
 *
 *	@file All'interno di logica gioco vengono fatti tutti i controlli delle posizioni,attuali e precedenti, e della 
 * 	selezione delle caselle di gioco.

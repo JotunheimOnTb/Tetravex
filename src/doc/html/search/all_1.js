@@ -1,8 +1,0 @@
-var searchData=
-[
-  ['card',['card',['../structCaselle.html#afa4196f5633118953d286e0be636d07f',1,'Caselle::card()'],['../structPiastreBianche.html#acae5a30fb768aceee6d4a8ba5ded2250',1,'PiastreBianche::card()'],['../HEADER__LOGICA__GIOCO_8h.html#a90493cb4d9abd6726dfc438c413a13be',1,'CARD():&#160;HEADER_LOGICA_GIOCO.h']]],
-  ['caselle',['Caselle',['../structCaselle.html',1,'']]],
-  ['collisione',['collisione',['../HEADER__MAIN_8h.html#a6fd75c3eba0d8ecf682b7083cc482441',1,'collisione(Caselle **cas, PiastreBianche **pbd, PiastreBianche **pbs, int pos_x, int pos_y):&#160;LOGICA_GIOCO.cc'],['../LOGICA__GIOCO_8cc.html#a6fd75c3eba0d8ecf682b7083cc482441',1,'collisione(Caselle **cas, PiastreBianche **pbd, PiastreBianche **pbs, int pos_x, int pos_y):&#160;LOGICA_GIOCO.cc']]],
-  ['controllo',['controllo',['../HEADER__MAIN_8h.html#afeb8b21449e32f018af235b386af1b03',1,'controllo(Caselle **cas, PiastreBianche **pbd, PiastreBianche **pbs, int i, int j, int indice_i, int indice_j):&#160;LOGICA_GIOCO.cc'],['../LOGICA__GIOCO_8cc.html#afeb8b21449e32f018af235b386af1b03',1,'controllo(Caselle **cas, PiastreBianche **pbd, PiastreBianche **pbs, int i, int j, int indice_i, int indice_j):&#160;LOGICA_GIOCO.cc']]],
-  ['controllo2',['controllo2',['../HEADER__MAIN_8h.html#a7934c54a8fdc1bd60f33884efdc2bf6f',1,'controllo2(Caselle **cas, PiastreBianche **pbd, PiastreBianche **pbs, int i, int j, int indice_i, int indice_j):&#160;LOGICA_GIOCO.cc'],['../LOGICA__GIOCO_8cc.html#a7934c54a8fdc1bd60f33884efdc2bf6f',1,'controllo2(Caselle **cas, PiastreBianche **pbd, PiastreBianche **pbs, int i, int j, int indice_i, int indice_j):&#160;LOGICA_GIOCO.cc']]]
-];

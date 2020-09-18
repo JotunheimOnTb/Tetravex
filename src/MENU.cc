@@ -8,7 +8,6 @@
 *
 * 	
 *	@author Daniele Salerno
-*	@author Salvatore Campanella
 *
 *	@file 
 *	File per la gestione del menu' del gioco.
