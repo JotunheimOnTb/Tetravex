@@ -1,5 +1,3 @@
-//enum CARD {NORD, EST, SUD, OVEST};
-//enum MOUSE{LEFT, RIGHT};
 #include <cstdlib> 	//rand
 #include <ctime>   	//time
 

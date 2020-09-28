@@ -6,7 +6,7 @@
 *	Il programma rappresenta un puzzle game numerico di nome Tetravex.
 *	Lo scopo del gioco è quello di mettere le caselle numerate ai lati del quadrato, in alto in basso destra e sinistra,
 *	in modo tale da non contrastare con le caselle adiacenti.
-*	Per l'utilizzo di immagini e input da mouse abbiamo utilizzato le funzioni di libreria di Allegro 5.
+*	Per l'utilizzo di immagini e input del mouse abbiamo utilizzato le funzioni di libreria di Allegro 5.
 *
 * 	Autori:
 *	@author Daniele Salerno
@@ -15,8 +15,8 @@
 *	File contenente la funzione principale del gioco
 */
 
-#include "HEADER_PRINCIPALE.h"
-#include "HEADER_LOGICA_GIOCO.h"
+#include "HEADER_MASTER.h"
+#include "HEADER_GAME.h"
 #include "HEADER_MAIN.h"
 
 /**
@@ -195,7 +195,6 @@ void shutdown(Caselle **cas, PiastreBianche **pbd, PiastreBianche **pbs) //grafi
 		}
 	}
 
-
 	for(int i = 0; i < DIFFICOLTA ; i++)
 	{
 		delete cas[i];
@@ -211,7 +210,7 @@ void shutdown(Caselle **cas, PiastreBianche **pbd, PiastreBianche **pbs) //grafi
 *crea effettivamente il campo da gioco: crea delle caselle random e poi le mescola. 
 *Successivamente carica le immagini presente nelle array nelle caselle.
 */
-void new_game(Caselle **cas)//logica_gioco
+void new_game(Caselle **cas)
 {
 	DBM("INIZIO NEW GAME ",LOG);
 	ALLEGRO_BITMAP *imm_num[40];

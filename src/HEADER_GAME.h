@@ -2,7 +2,6 @@
 *L'enum CARD serve a verificare che le caselle non siano contrastanti con le caselle adiacenti.
 */
 enum CARD {NORD, EST, SUD, OVEST};
-//enum MOUSE{LEFT, RIGHT};
 
 /**
 *Le caselle sono i quadrati formante da quattro numeri(uno per lato) che verranno posizione nelle strutture PiastrBianche.

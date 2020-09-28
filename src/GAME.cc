@@ -9,8 +9,8 @@
 */
 
 
-#include "HEADER_PRINCIPALE.h"
-#include "HEADER_LOGICA_GIOCO.h"
+#include "HEADER_MASTER.h"
+#include "HEADER_GAME.h"
 
 
 extern int DIFFICOLTA; 
@@ -540,4 +540,3 @@ void collisione(Caselle **cas,PiastreBianche **pbd, PiastreBianche **pbs,int pos
 		}
 	}
 }
-

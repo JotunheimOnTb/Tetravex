@@ -14,7 +14,7 @@
 *
 */
 
-#include "HEADER_PRINCIPALE.h"
+#include "HEADER_MASTER.h"
 
 extern unsigned int maschera;
 
@@ -320,6 +320,4 @@ int nuovomenu()
 	al_destroy_bitmap(sfondi[quattro]);
 	
 	return -1;
-
-
 }
